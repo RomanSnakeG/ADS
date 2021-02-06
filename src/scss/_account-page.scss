@@ -1,0 +1,469 @@
+.account-conteiner {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 0px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #f0f0f0;
+
+    img {
+        padding: 30px 0 0 40px;
+        margin-bottom: 100px;
+    }
+
+    .account-sidebar {
+        width: 30%;
+        min-height: 700px;
+        background: #FBA51B;
+    }
+    .account-lists {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        ul {
+            padding: 0;
+        }
+        li {
+            width: 100%;
+            padding: 10px 10px 10px 60px;
+            color: #fff;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 17px;
+            cursor: pointer;
+
+            &:hover, &:active {
+                background: #FFD28F;
+            }
+        }
+        a {
+            color: #fff;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .account-item--active {
+            background: #FFD28F;
+            color: #53565A;
+
+        }
+        .account-item--icon1 {
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url(../img/profile-acc.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 12px;
+                left: 40px;
+            }
+            &:hover{
+                color: #53565A;
+            }
+            &:hover:before {
+                background: url(../img/profile-acc-hover.svg);
+                background-repeat: no-repeat;
+            }
+        }
+        .account-item--icon2 {
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url(../img/orders.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 12px;
+                left: 40px;
+            }
+            &:hover {
+                color: #53565A;
+            }
+            &:hover:before {
+                background: url(../img/orders-hover.svg);
+                background-repeat: no-repeat;
+            }
+        }
+        .account-item--icon3 {
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url(../img/requisites.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 12px;
+                left: 40px;
+            }
+            &:hover {
+                color: #53565A;
+            }
+            &:hover:before {
+                background: url(../img/requisites-hover.svg);
+                background-repeat: no-repeat;
+            }
+        }
+        .account-item--icon4 {
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url(../img/calculator.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 12px;
+                left: 40px;
+            }
+            &:hover {
+                color: #53565A;
+            }
+            &:hover:before {
+                background: url(../img/calculator-hover.svg);
+                background-repeat: no-repeat;
+            }
+        }
+        .account-item--icon5 {
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url(../img/exit.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 12px;
+                left: 40px;
+            }
+            &:hover:before {
+                background: url(../img/exit-hover.svg);
+                background-repeat: no-repeat;
+            }
+        }
+        .account-item--icon6 {
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                background: url(../img/delete.svg);
+                background-repeat: no-repeat;
+                width: 12px;
+                height: 12px;
+                position: absolute;
+                top: 12px;
+                left: 40px;
+            }
+            &:hover {
+                color: #53565A;
+            }
+            &:hover:before {
+                background: url(../img/delete-hover.svg);
+                background-repeat: no-repeat;
+            }
+        }
+        
+    }
+    .account-content {
+        width: 65%;
+
+        .account-content--header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            margin-top: 30px;
+
+            h2 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #53565A;
+            }
+
+            .account-content--header__profile {
+                display: flex;
+                align-items: center;
+
+                h4 {
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #53565A;
+                }
+
+                img {
+                    padding: 0;
+                    margin: 0 0 0 20px;
+                }
+            }
+        }
+
+        .account-content--main {
+            border: 1px solid #F0F0F0;
+            padding: 30px;
+
+            .account-content--main__head--content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #F0F0F0;
+
+                p {
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: right;
+                    color: #53565A;
+                }
+                h4 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #53565A;
+                }
+            }
+
+
+            .account-content--main__active--orders, .account-content--main__unpaid--orders, .account-content--main__total--orders {
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 0 0;
+            }
+            .account-content--main__total--orders {
+                padding-bottom: 30px;
+            }
+            .account-content--main__footer--content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 30px;
+                border-top: 1px solid #F0F0F0;
+
+                a {
+                    font-weight: 800;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FBA51B;
+                }
+                p {
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #53565A;
+                }
+            }
+        }
+    }
+}
+.out {
+
+    h4 {
+        width: 220px;
+        margin: 0 auto;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #53565A;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    button {
+        background: none;
+        border: none;
+        border-radius: 2px;
+        padding: 15px 43px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #53565A;
+        cursor: pointer;
+
+        &:hover {
+            background: #FBA51B;
+            color: #fff;
+        }
+    }
+    // .active {
+    //     background: #FBA51B;
+    //     color: #fff;
+    // }
+}
+.remove-account {
+
+    h4 {
+        width: 220px;
+        margin: 0 auto;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #53565A;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    button {
+        background: none;
+        border: none;
+        border-radius: 2px;
+        padding: 15px 43px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #53565A;
+        cursor: pointer;
+
+        &:hover, .active {
+            background: #FBA51B;
+            color: #fff;
+        }
+    }
+    // .active {
+    //     background: #FBA51B;
+    //     color: #fff;
+    // }
+}
+
+//media 
+@media (max-width: 1200px) {
+    .account-conteiner {
+        width: auto;
+        padding: 0 30px 0 0;
+    }
+}
+@media (max-width: 800px) {
+    .account-conteiner .account-sidebar {
+        width: 28%;
+    }
+    .account-conteiner .account-content {
+        width: 68%;
+    }
+}
+@media (max-width: 767px) { 
+    .account-conteiner {
+        flex-direction: column;
+        padding: 0;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        .account-sidebar {
+            width: 100%;
+            min-height: auto;
+        }
+        .account-lists {
+            height: auto;
+            ul {
+                display: flex;
+                flex-direction: row;
+            }
+            ul:last-child {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    // width: 35%;
+                }
+            }
+            li {
+                padding: 10px 10px 10px 30px;
+            }
+            .account-item--icon1:before, .account-item--icon2:before, .account-item--icon3:before,
+            .account-item--icon4:before, .account-item--icon5:before, .account-item--icon6:before {
+                left: 10px;
+            }
+            
+        }
+        .account-content {
+            width: 100%;
+            padding: 0 30px 30px;
+        }
+    }
+    .account-sidebar img {
+        display: none;
+    }
+}
+@media (max-width: 500px) { 
+    .account-conteiner .account-content {
+        padding: 0 15px 15px;
+    }
+    .account-conteiner .account-content .account-content--main {
+        padding: 30px 15px;
+        background: #FBFBFB;
+    }
+    .account-lists {
+
+        ul:first-child {
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+            }
+        }
+    }
+    .account-content--main__footer--content a, .account-content--main__footer--content p {
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 450px) { 
+    .account-conteiner .account-content {
+        padding: 0 15px 50px;
+    }
+    .account-conteiner .account-content .account-content--header {
+
+        h2 {
+            font-size: 19px;
+        }
+        
+    }
+    .account-lists {
+
+        ul:first-child {
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+    .account-content--main__head--content {
+        p, h4 {
+            font-size: 14px !important;
+            line-height: 22px;
+        }
+    }
+    .account-content--main__footer--content {
+        position: relative;
+        
+        a {
+            position: absolute;
+            right: 0;
+            bottom: -65px;
+        }
+    }
+    .account-content--header__profile h4 {
+        display: none;
+    }
+}

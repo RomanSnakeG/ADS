@@ -1,0 +1,64 @@
+.popup-more--conteiner {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #53565A;
+        margin-bottom: 50px;
+    }
+    p, label {
+      font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #53565A;  
+        margin: 10px 0;
+    }
+    .popup-more--name, .popup-more--phone, textarea, .popup-more--name:focus, .popup-more--phone:focus, textarea:focus {
+        width: 100%;
+        border: 1px solid #E9E9E9;
+        box-sizing: border-box;
+        padding: 15px;
+        font-weight: 500;
+    }
+    textarea {
+        margin-bottom: 20px;
+    }
+    button {
+        width: 100%;
+        background-color: #FBA51B;
+        border: none;
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 15px;
+        margin: 20px 0 0;
+    }
+    .popup-more--radio {
+        display: inline-block;
+        margin-right: 25px;
+        input {
+            margin-right: 10px;
+                margin-top: 0;
+        }
+    }
+}
+label.popup-more--radio.popup-mope--rigth {
+    margin-right: 65px;
+}
+
+//media
+@media (max-width: 500px) {
+    .popup-more--conteiner {
+        width: auto;
+    }
+    label.popup-more--radio.popup-mope--rigth {
+    margin-right: 25px;
+}
+}

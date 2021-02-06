@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header class="header-wrapper">
+    <a class="header-main--logo" href="#"><img src="../img/logo.svg" alt="logo"></a>
+    <a class="header-phone" href="tel:88125021066">8 (812) 502-10-66</a>
+    <a href="#"><img src="img/profile.svg" alt="profile"></a>
+    <a class="header-mobile--logo" href="#"><img src="../img/logo-mobile.png" alt="logo"></a>
+    <ul class="header-nav">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Наши услуги</a></li>
+        <li><a href="#">Наш парк</a></li>
+        <li><a href="#">Наши работы</a></li>
+    </ul>
+    <div class="header-menu-mobile">
+        <div class="icon nav-icon-5">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="catalog">
+        <img src="img/ads.png" alt="logo">
+        <ul id="" class="catalog-list">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Наши услуги</a></li>
+            <li><a href="#">Наш парк</a></li>
+            <li><a href="#">Наши работы</a></li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+</header>
+    <section class="account-wrapper">
+    <div class="account-conteiner">
+        <div class="account-sidebar">
+            <img src="img/ads.png" alt="logo">
+            <div class="account-lists">
+                <ul>
+                    <li class="account-item account-item--icon1 account-icon--active account-item--active">Профиль</li>
+                    <li class="account-item account-item--icon2">Заказы</li>
+                    <li class="account-item account-item--icon3">Реквизиты</li>
+                    <li class="account-item account-item--icon4">Калькулятор</li>
+                </ul>
+                <ul>
+                    <li data-fancybox data-src="#hidden-content--out" href="javascript:;" class="account-item--icon5">Выйти</li>
+                    <li data-fancybox data-src="#hidden-content--remove-account" href="javascript:;" class="account-item--icon6">Удалить аккаунт</li>
+                </ul>
+            </div>
+        </div>
+        <div class="account-content">
+            <div class="account-content--header">
+                <h2>Профиль</h2>
+                <div class="account-content--header__profile">
+                    <h4>Иван Абрамов</h4>
+                    <img src="../src/img/profile-img.jpg" alt="profile">
+                </div>
+            </div>
+            <div class="account-content--main">
+                <div class="account-content--main__head--content">
+                    <p>08.09.1994 </p>
+                    <h4>Иван Ибрагимов</h4>
+                    <p>26 лет</p>
+                </div>
+                <div class="account-content--main__orders">
+                    <div class="account-content--main__active--orders">
+                        <p>Активные заказы</p>
+                        <span>1</span>
+                    </div>
+                    <div class="account-content--main__unpaid--orders">
+                        <p>Неоплаченные заказы</p>
+                        <span>1</span>
+                    </div>
+                    <div class="account-content--main__total--orders">
+                        <p>Заказов за всё время</p>
+                        <span>11</span>
+                    </div>
+                </div>
+                <div class="account-content--main__footer--content">
+                    <a href="#">РЕДАКТИРОВАТЬ</a>
+                    <p>+7 (983) 805 45 93</p>
+                    <p>ivanabram@mail.ru</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="hidden-content--out" class="out" style="display: none;">
+    <div class="out-conteiner">
+        <h4>Вы действительно хотите выйти?</h4>
+        <div class="out-block">
+            <button>Да</button>
+            <button>Нет</button>
+        </div>
+    </div>
+</section>
+<section id="hidden-content--remove-account" class="remove-account" style="display: none;">
+    <h4>Удалить?</h4>
+    <div class="remove-account--block">
+        <button>Да</button>
+        <button>Нет</button>
+    </div>
+</section>
+    <footer class="footer-wrapper">
+    <p class="footer-copy">&copy; Все права защищены ООО Аренда спецтехники</p>
+    <div class="footer-connection--block">
+        <a href="#">tehnicastore@bk.ru</a>
+        <a href="tel:89023485950">+7 (902) 348 59 50</a>
+    </div>
+</footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

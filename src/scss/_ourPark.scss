@@ -1,0 +1,206 @@
+.our-park--conteiner {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px 40px;
+
+    h2 {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 45px;
+        color: #53565A;
+        margin-bottom: 70px;
+    }
+}
+.our-park--slick {
+    height: 500px;
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 0;
+    }
+    .slick-next {
+        right: 29%;
+        top: auto;
+        bottom: -5px;
+    }
+    .slick-next:before {
+        content: '→';
+        border: 10px solid transparent;
+        border-left: 10px solid #53565A;
+    }
+    .slick-prev {
+        left: 29%;
+        top: auto;
+        bottom: -5px;
+        z-index: 5;
+    }
+    .slick-prev:before {
+        content: '←';
+        border: 10px solid transparent;
+        border-right: 10px solid #53565A;
+    }
+}
+.our-park--slick__block {
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;  
+    display: flex !important;
+    flex-direction: column;
+    padding: 30px;
+    width: 360px;
+    margin: 0 15px;
+    outline: none !important;
+    position: relative;
+
+    a {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: right;
+        text-decoration-line: underline;
+        color: #FBA51B;
+    }
+    .our-park--more__mob {
+        display: none;
+    }
+    .our-park--img {
+        height: 210px;
+
+        img {
+            padding: 15px 10px;
+        }
+    }
+    
+    h4 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #53565A;
+        margin-bottom: 30px;
+    }
+    p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #53565A;
+        margin-bottom: 40px;
+    }
+    span {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        color: #53565A;
+    }
+    button {
+        // display: none;
+        background-color:#FBA51B;
+        padding: 15px;
+        border: none;
+        border-radius: 2px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin: 50px 0 0px;
+        cursor: pointer;
+    }
+
+    &:hover {
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+        button {
+            display: block;
+        }
+    }
+}
+
+//media
+@media (max-width: 1200px) {
+    .our-park--conteiner {
+        width: auto;
+    }
+}
+@media (max-width: 1124px) {
+    .our-park--slick {
+        .slick-next, .slick-prev {
+            display: none !important;
+        }
+    }
+    .our-park--btn {
+        display: block !important; 
+    }
+}
+@media (max-width: 768px) {
+    .our-park--conteiner {
+        padding: 0 15px 40px;
+    }
+}
+@media (max-width: 640px) {
+    .our-park--more__desc {
+        display: none;
+    }
+    .our-park--slick__block .our-park--more__mob {
+        display: block;
+        position: absolute;
+        right: 30px;
+        bottom: 155px;
+    }
+    .our-park--slick__block .our-park--btn {
+        display: block;
+        background: none;
+        color: #FBA51B;
+        position: absolute;
+        right: 30px;
+        bottom: 35px;
+        padding: 0;
+        margin: 0;
+    }
+    .our-park--slick__block .our-park--btn:hover {
+
+    }
+    .our-park--slick {
+        height: auto;
+    }
+    .our-park--slick .slick-dots li button:before {
+        color: #fba51b !important;
+    }
+    .our-park--slick .slick-dots li {
+        margin: 0;
+    }
+    .our-park--slick__block p {
+        font-size: 16px;
+    }
+    .our-park--slick__block .our-park--img {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+    .our-park--conteiner h2 {
+        text-align: center;
+    }
+    .our-park--slick__block {
+        padding: 15px;
+        margin: 0;
+    }
+    .our-park--slick__block h4 {
+        font-size: 19px;
+    }
+    .our-park--slick__block p {
+        font-size: 14px;
+    }
+    .our-park--slick__block span {
+        font-size: 21px;
+    }
+    .our-park--slick__block .our-park--more__mob  {
+        right: 15px;
+        bottom: 139px;
+    }
+    .our-park--slick__block .our-park--btn {
+        right: 15px;
+        bottom: 20px;
+    }
+    .our-park--slick__block .our-park--img img {
+        padding: 20px 0;
+    }
+}
