@@ -45,6 +45,38 @@
     outline: none !important;
 }
 
+.header-banner--slick .slick-dots {
+    position: absolute;
+    width: 30px;
+    top: 0;
+    right: -50px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.header-banner--slick .slick-dots li {
+    margin: 0;
+}
+
+.header-banner--slick .slick-dots li button:before {
+    color: #fba51b!important;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
 .header-banner--block-content {
     display: flex;
     flex-direction: column;
@@ -104,6 +136,14 @@
 @media (max-width: 1200px) {
     .header-banner--conteiner {
         width: auto;
+    }
+    .header-banner--slick .slick-dots {
+        align-items: start;
+        flex-direction: row;
+        width: 100%;
+        right: 0;
+        top: auto;
+        bottom: -40px;
     }
 }
 @media (max-width: 991px) {

@@ -6,7 +6,8 @@ jQuery(document).ready(function () {
         autoplaySpeed: 4000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        dots: true
     });
     $('.services-slick').slick({
         infinite: true,
@@ -133,7 +134,7 @@ jQuery(document).ready(function () {
         $(".slick-active").each(function (index, el) {
 
             $(el).attr("data-my-slick-attr", index);
-            if ($(el).attr("data-my-slick-attr") == 2) {
+            if ($(el).attr("data-my-slick-attr") == 3) {
                 $(this).find('.our-park--btn').css('display', 'block');
             }
             else {
@@ -171,6 +172,25 @@ icons.forEach(icon => {
     });
 });
 
+/** fixed menu */
+const nav = $('.header-wrapper');
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 130) {
+        nav.addClass("f-nav");
+    } else {
+        nav.removeClass("f-nav");
+    }
+});
+
+/** phoneBtn block */
+const phoneBtn = document.querySelector('.header-phone--wrapp');
+phoneBtn.addEventListener('click', (event) => {
+    if ($(".header-phone").is(":visible")) {
+        $('.header-phone').css('display', 'none');
+    } else {
+        $('.header-phone').css('display', 'block');
+    }     
+});
 ;
 jQuery(document).ready(function(){
     /** account block item */
